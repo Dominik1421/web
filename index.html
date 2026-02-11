@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 
 <body>
@@ -379,7 +380,7 @@
     </div>
   </section>
 
-  <script src="script.js"></script>
+
   <!-- Modal okno -->
   <div class="modal" id="project-modal">
     <div class="modal-content">
@@ -395,23 +396,36 @@
       </div>
     </div>
   </div>
-  <footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-logo">Dominik M</div>
-
-      <div class="social-links">
-        <a href="#" class="social-link" aria-label="GitHub">https://github.com/Dominik1421</a>
-        <a href="#" class="social-link" aria-label="LinkedIn">https://www.twitch.tv/itsfluxel</a>
-        <a href="#" class="social-link" aria-label="Instagram">instafgram@instafgram.cz</a>
-      </div>
-
-      <p class="copyright">© 2026 Všechna práva vyhrazena.</p>
-
-      <a href="#home" class="scroll-top">Nahoru ↑</a>
+  <!-- Sekce s mapou -->
+  <section class="map-section" id="map-section">
+    <div class="container">
+      <h2 class="section-title">Kde mě najít</h2>
+      <p class="section-subtitle">Tady se nacházím</p>
+      <div id="map"></div>
     </div>
-  </div>
-</footer>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Dominik M</div>
+
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="GitHub">https://github.com/Dominik1421</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">https://www.twitch.tv/itsfluxel</a>
+          <a href="#" class="social-link" aria-label="Instagram">instafgram@instafgram.cz</a>
+        </div>
+
+        <p class="copyright">© 2026 Všechna práva vyhrazena.</p>
+
+        <a href="#home" class="scroll-top">Nahoru ↑</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="script.js"></script>
+
 </body>
 
 
